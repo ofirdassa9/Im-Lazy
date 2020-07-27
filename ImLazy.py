@@ -8,8 +8,7 @@ parser = argparse.ArgumentParser(description="The ImLazy By Ofir Dassa:")
 parser.add_argument("-tP","--topports", action='store_true', help="Scan the top 20 common ports")
 parser.add_argument("-p","--ports",type=str, help="range of ports. EX: -p=1-445")
 parser.add_argument("-ip", type=str, required=True)
-#args = parser.parse_args()
-args = parser.parse_args(["-p", "21,22,80,443" , "-ip" , "127.0.0.1"])
+args = parser.parse_args()
 def Ping():
         	response = os.system("ping -c 1 " + args.ip)
 		if response == 0:
