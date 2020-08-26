@@ -16,7 +16,6 @@ def Ping():
 		else:
 			print ("Ureachable host")
 			return False
-
 def PortScan():
 	if args.topports:
 		print("scanning fot 20 top ports")
@@ -78,8 +77,6 @@ def PortScan():
 				exit()
 			except:
 				pass
-
-
 def ftpcheck(ip):
 	import ftplib
 	try:
